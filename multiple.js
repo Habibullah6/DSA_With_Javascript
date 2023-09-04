@@ -1,9 +1,15 @@
 function multipleArray(n) {
-  for (let i = 0; i <= n; i++) {
-    for (let j = 0; j <= n; j++) {
-      console.log(i, j);
+  let total = 0;
+  for (let i = 1; i <= n; i++) {
+    console.log("i=", i);
+    for (let j = 1; j <= n; j++) {
+      console.log("j=", j);
+      total++;
     }
   }
+
+  return total;
 }
 
-multipleArray(3);
+const result = multipleArray(5);
+console.log(result);
