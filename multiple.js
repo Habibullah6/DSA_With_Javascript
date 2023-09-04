@@ -1,3 +1,5 @@
+// Big O(n)^2 example
+
 function multipleArray(n) {
   let total = 0;
   for (let i = 1; i <= n; i++) {

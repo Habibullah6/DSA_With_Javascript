@@ -1,3 +1,4 @@
+// Big O(n) example
 function sumOfAll(n) {
   let total = 0;
   for (let i = 0; i <= n; i++) {
@@ -7,6 +8,7 @@ function sumOfAll(n) {
   return total;
 }
 
+// Big O(1) example
 // function sumOfAll(n) {
 //   return (n * (n + 1)) / 2;
 // }
