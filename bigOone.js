@@ -12,7 +12,7 @@ const myArray = [10, 20, 30, 40, 50];
 const firstElement = getFirstElement(myArray);
 console.log(firstElement); // Output: 10
 
-//   We have a function called getFirstElement that takes an array arr as its parameter.
+// We have a function called getFirstElement that takes an array arr as its parameter.
 // Inside the function, we check if the array is empty by comparing its length property to zero. This check is necessary to handle the edge case of an empty array.
 // If the array is not empty, we return the first element of the array, which is arr[0].
 // The key point to note here is that the time it takes to retrieve the first element of the array (arr[0]) is constant and does not depend on the size of the array. Therefore, the time complexity of this operation is O(1).
