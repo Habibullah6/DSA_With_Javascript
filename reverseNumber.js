@@ -7,6 +7,6 @@ function reverseNumber(number) {
   return isNegative ? -reversedNumber : reversedNumber;
 }
 
-const inputNumber = parseInt(-26);
+const inputNumber = parseInt(-30);
 const reversedNumber = reverseNumber(inputNumber);
 console.log("Reversed number:", reversedNumber);
