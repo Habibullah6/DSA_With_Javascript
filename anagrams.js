@@ -32,15 +32,27 @@
 // const result = anagramFunc("debit card", "bad credit");
 // console.log(result);
 
-function sortStr(str) {
-  return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
-}
+// function sortStr(str) {
+//   return str.replace(/[^\w]/g, "").toLowerCase().split("").sort().join("");
+// }
 
-function anaFunc(strOne, strTwo) {
-  const anaOne = sortStr(strOne);
-  const anaTwo = sortStr(strTwo);
-  return anaOne === anaTwo;
-}
+// function anaFunc(strOne, strTwo) {
+//   const anaOne = sortStr(strOne);
+//   const anaTwo = sortStr(strTwo);
+//   return anaOne === anaTwo;
+// }
 
-const result = anaFunc("debit card", "bad credit");
-console.log(result);
+// const result = anaFunc("debit card", "bad credit");
+// console.log(result);
+
+const anagram = function (s, t) {
+  const a = s.split("").sort().join("");
+  const b = t.split("").sort().join("");
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
+};
+const res = anagram("res", "erdds");
+console.log(res);
