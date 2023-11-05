@@ -45,14 +45,39 @@
 // const result = anaFunc("debit card", "bad credit");
 // console.log(result);
 
-const anagram = function (s, t) {
-  const a = s.split("").sort().join("");
-  const b = t.split("").sort().join("");
-  if (a === b) {
-    return true;
-  } else {
-    return false;
+// const anagram = function (s, t) {
+//   const a = s.split("").sort().join("");
+//   const b = t.split("").sort().join("");
+//   if (a === b) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+// const res = anagram("res", "erdds");
+// console.log(res);
+
+function characterMap(inputString) {
+  const charMap = {};
+
+  for (let char of inputString.replace(/[^\w]/g, "")) {
+    charMap[char] = charMap[char] + 1 || 1;
   }
-};
-const res = anagram("res", "erdds");
+
+  return charMap;
+}
+
+function isAnagram(s, t) {
+  if (s.length !== t.length) return false;
+  const one = characterMap(s);
+  const two = characterMap(t);
+  for (let char in one) {
+    if (one[char] !== two[char]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+const res = isAnagram("div", "vid");
 console.log(res);
